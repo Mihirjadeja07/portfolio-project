@@ -57,8 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
         formStatus.className = 'text-center mt-6 text-blue-400';
 
         try {
-            // IMPORTANT: Replace with your actual backend endpoint
-            const response = await fetch('http://localhost:3001/send', {
+            // ===================================================================
+            // This now points to your live backend server on Render.
+            // ===================================================================
+            const response = await fetch('https://mihirsinh.onrender.com/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
